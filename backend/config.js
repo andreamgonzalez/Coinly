@@ -13,7 +13,7 @@ const PORT = +process.env.PORT || 3001;
 function getDatabaseUri() {
   return (process.env.NODE_ENV === "test")
       ? "coinly_test"
-      : process.env.DATABASE_URL || "coinly";
+      : process.env.DATABASE_URL || "postgres://testuser:qFTYK4R5iNsneIZYstYER9PiTN7g6bOQ@dpg-chaljhrhp8u5jt0bpr7g-a.oregon-postgres.render.com/coinly_l1f6";
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
