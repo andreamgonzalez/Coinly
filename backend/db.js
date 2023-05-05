@@ -7,7 +7,7 @@ let db;
 
 if (process.env.NODE_ENV === "production") {
   db = new Client({
-    connectionString: getDatabaseUri(),
+    connectionString: process.env.DBConfigLink,
     ssl: {
       rejectUnauthorized: false
     }
